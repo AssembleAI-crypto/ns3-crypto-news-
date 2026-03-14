@@ -147,20 +147,20 @@ https://api.ns3.ai/feed/news-data?lang={code}          # News RSS (use with filt
 curl -s "https://api.ns3.ai/feed/news-data?lang=en&crypto=BTC&newsType=important"
 
 # Specific coin, exclude routine items
-curl -s "https://api.ns3.ai/feed/news-data?lang=en&crypto=ETH&excludeLevel=4,5"
+curl -s "https://api.ns3.ai/feed/news-data?lang=en&crypto=ETH&excludeLevels=4,5"
 
 # Level 1-2 only across all coins
-curl -s "https://api.ns3.ai/feed/news-data?lang=en&excludeLevel=3,4,5"
+curl -s "https://api.ns3.ai/feed/news-data?lang=en&excludeLevels=3,4,5"
 ```
 
 ### News Flash Filters
 
 ```bash
 # Exclude listings (crypto/macro/price alerts only)
-curl -s "https://api.ns3.ai/feed/news-flash?lang=en&excludeNews=2"
+curl -s "https://api.ns3.ai/feed/news-flash?lang=en&excludeSources=2"
 
 # Listings only
-curl -s "https://api.ns3.ai/feed/news-flash?lang=en&excludeNews=1"
+curl -s "https://api.ns3.ai/feed/news-flash?lang=en&excludeSources=1"
 ```
 
 ## Documentation
